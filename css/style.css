@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+/* 1. global config 
+
+    - all margins and paddings set to 0
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. global style
+
+    
+    - set all default font family Noto Sans which you can get at google fonts
+    - set all the the line spacing to 1.4
+    - remove all anchor tag underline
+    - set a default margin for all paragraphs to 0.75 for top and bottom and 0 to left and right
+
+*/
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0.75rem 0;
+}
+
+/* 3. settings
+
+    - create a rule where you can control the maximum width of your content
+    while adapting to browser widths
+    - create a rule to center all contents under this setting
+    - create a rule to set all elements inside of this setting to have
+    a "space inside" with a "0" from top and bottom and 32px using the "rem" units
+    in left and right
+    - and lastly set a rule on overflowing elements inside to hidden.
+
+*/
+.container {
+  max-width: 1200x;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+/* 
+    4.  Collaborative Task for Assessment
+
+    4.1  Your goal is to apply pertinent rules to produce same result(output)
+    as what the figure displays in assessment_output.png.
+
+    Color Values
+    - #f8e2cf
+    - #ff7600
+    - #fdf6f0
+    - #333
+*/
+
+/* main section */
+#main-section .items {
+  display: flex;
+ }
+ 
+#main-section .items .item {
+  display: flex;
+  text-align: center;
+  padding: 1rem;
+}
+
+#main-section .items .item i {
+  background: #f8e2cf;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-right: 1.3rem;
+  margin-bottom: 0;
+  align-self: center; 
+}
+
+.text-center {
+  text-align: center;
+}
+.text-primary {
+  color: #ff7600;
+}
+.bg {
+  background: #fdf6f0;
+}
+/* 
+.main {
+  padding: 1.5rem;
+}
